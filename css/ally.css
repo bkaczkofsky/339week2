@@ -28,7 +28,6 @@ body{
  
  img{
    display: inline-block;
-   text-align: center;
    border: solid 3px lightblue;
    padding: 5px;
  }
@@ -37,3 +36,21 @@ body{
    text-align: left;
    background-image: linear-gradient(lightblue, white);
  }
+
+ .gallery{
+  display: grid;
+  grid-template-columns: 250px 250px;
+  justify-content: center;
+  border: 5px solid lightblue;
+
+ }
+
+ .gallery img{
+  width: -webkit-fill-available;
+  border: 5px solid lightblue;
+  margin: 10px;
+ }
+
+ .gallery img:last-child{
+  grid-column: 1/-1;
+}
